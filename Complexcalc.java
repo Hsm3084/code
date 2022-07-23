@@ -26,18 +26,12 @@ public class Complexcalc {
     private boolean addWrite = true; 
     private double val = 0; 
     private boolean isScientificMode = false;
-
-  
-
-    private Calculatorr() {
-        window = new JFrame("Calculator");
+    private Complexcalc() {
+        window = new JFrame("Complexcalc");
         window.setSize(WINDOW_WIDTH, WINDOW_HEIGHT); 
         window.setLocationRelativeTo(null); 
-
-        // Button fonts
         Font btnFont = new Font("Comic Sans MS", Font.PLAIN, 28);
         Font smallTxtBtnFont = new Font("Comic Sans MS", Font.PLAIN, 24);
-
         btnSwitchToScientificMode = new JButton();
         btnSwitchToScientificMode.setBounds(30, 30, 340, 20);
         btnSwitchToScientificMode.setText("Scientific Mode");
@@ -549,6 +543,6 @@ public class Complexcalc {
     }
 
     public static void main(String[] args) {
-        new Calculatorr();
+        new Complexcalc();
     }
 }
