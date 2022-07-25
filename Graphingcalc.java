@@ -53,3 +53,62 @@ number(function.substring(1,function.length()),variable);
 if(current ==' -
 '||current=='1'||current==cosi||current==sine||current==tangent||current==varia)
 {
+if(current == 'l' && function.charAt(3) !='x')return 
+Math.log(number(function.substring(3,function.length()-1),variable));
+if(current == 'l' && function.charAt(3)=='x')now = 
+Math.log(variable);
+if(current == cosi && function.charAt(4) !='x')return 
+Math.cos(number(function.substring(4,function.length()-1),variable));
+if(current == cosi && function.charAt(4)=='x')now = 
+Math.cos(variable);
+if(current == sine && function.charAt(4) !='x')return 
+Math.sin(number(function.substring(4,function.length()-1),variable));
+if(current == sine && function.charAt(4)=='x')now =
+Math.sin(variable);
+if(current == tangent && function.charAt(4) !='x')return
+Math.tan(number(function.substring(4,function.length()-1),variable));
+if(current == tangent && function.charAt(4)=='x')now = 
+Math.tan(variable);
+if(current == varia)now = variable;
+}
+else now = Double.parseDouble(String.valueOf(function));
+return now;
+}
+catch(exception e){return 0;}
+}
+Public String Operation(String inputString,double position)
+{
+if(inputString.charAt(0)=='-')inputString = "0+" + inputString; 
+JOptionPane msg = new JOptionPane();
+DecimalFormat dcm= new DeciamlFormat("0.#######)
+char addition = '+';
+char subtraction = '-';
+char multiplication = '*';
+char division = '/';
+char root = '√';
+char exponent = '^';
+char operators[] = {addition,subtraction,multiplication,division,root,exponent};
+if(inputString.indexof("[")>=0)
+for(int i = inputSting.length()-1;i>=0;i--)
+{
+int start = 0
+int end = 0
+if(inputString.charAt(i)=='('){start=i;
+end = inputString.indexOf(")",i);
+StringBuffer buff = new StingBuffer(inputString);
+buff.delete(start,end+1);
+buff.insert(start,Operation(inputString.substring(substring(start+1,end),position));
+inputString = buff.toString();i=inputString.length-1;}
+for(int count = 0; count<=4;count++)
+String t1 = new String();
+String t2 = new String();
+for(int i = 1; i<inputString.length();i++)
+{
+if(inputString.charAt(i) == Operators[count])
+{
+int begin = 0;
+int start = i
+int end = inputString.length
+for(int j = start-1; j>0; j--)
+if(inputString.charAt(j) == addition || inputString.charAt(j) == subtraction || inputString.charAt(j) == multiplication || inputString.charAt(j) == division ||
+inputString.charAt(j) == root || inputString.charAt(j) == exponent)
