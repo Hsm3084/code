@@ -112,3 +112,36 @@ int end = inputString.length
 for(int j = start-1; j>0; j--)
 if(inputString.charAt(j) == addition || inputString.charAt(j) == subtraction || inputString.charAt(j) == multiplication || inputString.charAt(j) == division ||
 inputString.charAt(j) == root || inputString.charAt(j) == exponent)
+{begin = j+1;j=0;}
+for(int p = star+2;p<inputString.length();p++)
+if(inputString.charAt(p) == addition || inputString.charAt(p) == subtraction || inputString.charAt(p) == multiplication || inputString.charAt(p) == division ||
+inputString.charAt(p) == root || inputString.charAt(p) == exponent)
+{end = p; p=inputString.length();}
+t1 = inputString.substring(begin,star);
+t2 = inputString.substring(star+1,end);
+StringBuffer = new StringBuffer(inputString);
+biff.delete(begin.end);
+String answer = newString();
+if(count == 0) answer =
+String.valueOf(Math.pow(number(t1,position),number(t2,position)));
+if(count == 0 && answer.compareTo("NaN")==0)return"?";
+if(count == 0 && answer.compareTo("NaN")!=0)buff.insert(begin,String.valueOf(dcm.format(number(t1,position)/number(t2,position)));
+}
+if(t2.charAt(0)=='x' && count==2)
+{
+if(position!=0)buff.insert(begin,String.valueOf(dcm.format(number(t1,position)/number(t2,position)));
+if(position==0)buff.insert(begin,String.valueOf(number(number(t1,position)/number(t2,position)));
+}
+if(count == 1)buff.insert(begin,String.valueOf(dcm.format(number(t1,position)*number(t2,position)));
+if(count == 2)buff.insert(begin,String.valueOf(dcm.format(number(t1,position)/number(t2,position)));
+if(count == 3)buff.insert(begin,String.valueOf(dcm.format(number(t1,position)+number(t2,position)));
+if(count == 4)buff.insert(begin,String.valueOf(dcm.format(number(t1,position)-number(t2,position)));
+if(count == 5)buff.insert(begin,String.valueOf(dcm.format(number(t1,position)^number(t2,position)));
+if(count == 6)buff.insert(begin,String.valueOf(dcm.format(√number(t1,position));
+inputString = buff.toString();i=0;
+}
+}
+}
+return inputString;
+)
+}
